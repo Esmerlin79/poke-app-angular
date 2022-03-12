@@ -1,0 +1,19 @@
+<div class="title-favorites">
+    <h1>Tus pokemones favoritos</h1>
+    <div class="row pt-5 ">     
+        <div class="col-sm pt-5" *ngFor="let item of favorites">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="{{item.picture}}" alt="img favorite">
+              <div class="card-body">
+                    <h5 class="card-title">{{item.name}}</h5>
+                    <p>Alias: <span class="text-muted">{{item.alias}}</span></p>
+                    <p>Creado: <span class="text-muted">{{item.createdAt}}</span></p>
+                    <a class="btn btn-success m-2" routerLink="{{item.name}}">Editar</a> 
+                    <button class="btn btn-danger" (click)="deleteFavorite(item)">Eliminar</button>
+              </div>
+            </div>
+          </div>          
+    </div>
+</div>
+
+

@@ -1,0 +1,22 @@
+<div class="container pt-5">
+    <div class="card">
+        <h5 class="card-header">Editar Pokemon</h5>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="{{pokemon.picture}}" alt="Pokemon edit">
+                </div>
+                <div class="col-sm">
+                    <p class="card-title">Name: <span class="text-muted">{{pokemon.name}}</span></p>
+                    <p>Creado: <span class="text-muted">{{pokemon.createdAt}}</span></p>
+                    <div class="form-group">
+                        <label for="alias">Alias</label>
+                        <input type="text" id="alias" value="{{pokemon.alias}}" #alias class="form-control">
+                    </div>
+                    <a routerLink=".." class="btn btn-primary-outline m-3">Volver</a>
+                    <button class="btn btn-primary" (click)="editFavorite(alias)">Editar</button>
+                </div>
+            </div>
+        </div>
+      </div>
+</div>

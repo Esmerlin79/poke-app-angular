@@ -1,0 +1,15 @@
+
+<div class="title-pokemons">
+    <h1>Listado de pokemones</h1>
+    <div class="row pt-5 ">     
+        <app-pokemon *ngFor="let item of pokemons" [pokemons]="item"></app-pokemon>
+    </div>
+
+    <div class="p-5">
+        <button type="button" class="btn btn-link btn-lg " (click)="getPreviousPokemons()" [class.disabled]="!isFirstPage">
+            Previous
+        </button>
+        <button type="button" class="btn btn-link btn-lg " (click)="getNextPokemons()">Next</button>
+    </div>
+</div>
+

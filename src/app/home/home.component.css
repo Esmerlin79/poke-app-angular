@@ -1,0 +1,10 @@
+.title-pokemons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.disabled {
+    cursor: not-allowed;
+    background-color: rgb(229, 229, 229) !important;
+    pointer-events: none;
+}
